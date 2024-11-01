@@ -1,0 +1,13 @@
+<%- include('blocks/base') -%>
+<body>
+    <%- include('blocks/header') -%>
+    <h1>Ваше имя: <%= name %> </h1>
+    <% if (name.toLowerCase() == 'ivan') { %>
+        <ul>
+            <% nums.forEach((el) => { %>
+                <li><%= el %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+</body>
+</html>
