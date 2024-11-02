@@ -10,8 +10,8 @@ const transporter = nodemailer.createTransport({
 });
 
 const mailOption = {
-    from: 'ksxw725@gmail.com',
-    to: 'byckovivan1601@gmail.com',
+    from: '',
+    to: '',
     subject: 'Тест',
     text: 'Проверка Node.js'
 }
