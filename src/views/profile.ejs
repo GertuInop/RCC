@@ -1,0 +1,32 @@
+<%- include('blocks/base') -%>
+<body>
+    <div class="global_events_page">
+        <%- include('blocks/logo_design') -%>
+        <div class="main_part">
+            <%- include('blocks/navbar') -%>
+            <div class="events">
+                <div class="global_events">
+                    <h1>ПРОФИЛЬ</h1>
+                    <div class="profile">
+                        <div class="profile_info">
+                            <h2>ФАМИЛИЯ ИМЯ</h2>
+                            <h3>Возраст: </h3>
+                            <h3>Населённый пункт: </h3>
+                            <h3>Телефон: </h3>
+                            <h3>Почта: </h3>
+                            <h3>Тип занятости: </h3>
+                            <h3>Образование: </h3>
+                        </div>
+                        <div class="profile_btn">
+                            <a href="/profile/:id/change">РЕДАКТИРОВАТЬ ПРОФИЛЬ</a>
+                            <a href="/profile/:id/password_change">ИЗМЕНИТЬ ПАРОЛЬ</a>
+                            <form action="/logout" method="post"><input type="submit" value="ВЫЙТИ" class="log_out"></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('blocks/footer') -%>
+    </div>
+</body>
+</html>

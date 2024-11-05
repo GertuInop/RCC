@@ -1,0 +1,41 @@
+<%- include('blocks/base') -%>
+<body>
+    <div class="global_events_page">
+        <%- include('blocks/logo_design') -%>
+        <div class="main_part">
+            <%- include('blocks/navbar') -%>
+            <div class="events">
+                <div class="global_events">
+                    <h1>ПОДРОБНЕЕ О *НАЗВАНИЕ МЕРОПРИЯТИЯ*</h1>
+                    <!-- Цикл FOR -->
+                    <div class="back">
+                        <div class="front">
+                            <img src="/images/logotype.png" class="event_img">
+                            <div class="front_way">
+                                <h2>НАЗВАНИЕ МЕРОПРИЯТИЯ</h2>
+                                <div class="event_info">
+                                    <img src="/images/map.png" class="event_mini_info_img">
+                                    <h3>Адрес</h3>
+                                </div>
+                                <div class="event_info">
+                                    <img src="/images/calendar.png" class="event_mini_info_img">
+                                    <h3>Дата</h3>
+                                </div>
+                                <div class="event_info">
+                                    <img src="/images/clock.png" class="event_mini_info_img">
+                                    <h3>Время</h3>
+                                </div>
+                                <p class="event_description">Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание </p>
+                                <form action="/usedb/event/3/registration/3" method="post"><input type="submit" value="ЗАПИСАТЬСЯ" class="event_info_btn"></form>
+                                <!-- <a href="/events/:id" class="event_info_btn">ИЗМЕНИТЬ</a> -->
+                                <!-- <form><a href="/events/:id" class="event_info_btn_cancle">ОТМЕНИТЬ</a></form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('blocks/footer') -%>
+    </div>
+</body>
+</html>

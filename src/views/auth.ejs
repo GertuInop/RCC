@@ -1,0 +1,19 @@
+<%- include('blocks/base_session') -%>
+<body>
+    <img class="logo_img" src="/images/logo_auth.png">
+    <form action="/auth" method="post">
+        <h1>АУТЕНТИФИКАЦИЯ</h1>
+        <div class="text_inputs">
+            <h2>Почта</h2>
+            <input type="text" name="email">
+            <h2>Пароль</h2>
+            <input type="password" name="password">
+            <a href="#">Не помню пароль</a>
+        </div>
+        <div class="btn_auth">
+            <input type="submit" value="ВОЙТИ">
+            <a href="/registration">Нет учётной записи?</a>
+        </div>
+    </form>
+</body>
+</html>

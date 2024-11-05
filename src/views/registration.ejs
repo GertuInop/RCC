@@ -1,0 +1,58 @@
+<%- include('blocks/base_session') -%>
+<body>
+    <img class="logo_img" src="/images/logo_auth.png">
+    <form action="/usedb/user" method="post">
+        <h1>РЕГИСТРАЦИЯ</h1>
+        <div class="text_inputs">
+            <h2>Имя</h2>
+            <input type="text" name="name">
+            <h2>Фамилия</h2>
+            <input type="text" name="surname">
+            <h2>Дата рождения</h2>
+            <input type="date" name="birth_date">
+            <h2>Населённый пункт</h2>
+            <select name="address">
+                <option value="г. Москва">г. Москва</option>
+                <option value="Московская область">Московская область</option>
+                <option value="Липецкая область">Липецкая область</option>
+                <option value="г. Санкт-Петербург">г. Санкт-Петербург</option>
+                <option value="Челябинская область">Челябинская область</option>
+                <option value="Вологодская область">Вологодская область</option>
+                <option value="Калининградская область">Калининградская область</option>
+                <option value="Ленинградская область">Ленинградская область</option>
+                <option value="Пензенская область">Пензенская область</option>
+                <option value="Псковская область">Псковская область</option>
+            </select>
+            <h2>Номер телефона</h2>
+            <input type="number" name="phone">
+            <h2>Почта</h2>
+            <input type="email" name="email">
+            <h2>Тип занятости</h2>
+            <select name="type_of_employment">
+                <option value="Школьник">Школьник</option>
+                <option value="Студент ССУЗа">Студент ССУЗа</option>
+                <option value="Студент ВУЗа">Студент ВУЗа</option>
+                <option value="Трудоустроен">Трудоустроен</option>
+                <option value="Временно не работающий">Временно не работающий</option>
+                <option value="Пенсионер">Пенсионер</option>
+            </select>
+            <h2>Образование</h2>
+            <select name="type_of_education">
+                <option value="Начальное">Начальное</option>
+                <option value="Среднее">Среднее</option>
+                <option value="Среднее специальное">Среднее специальное</option>
+                <option value="Неоконченное высшее">Неоконченное высшее</option>
+                <option value="Высшее">Высшее</option>
+            </select>
+            <h2>Пароль</h2>
+            <input type="password" name="password">
+            <h2>Повторите пароль</h2>
+            <input type="password" name="repeat_password">
+        </div>
+        <div class="btn_auth">
+            <input type="submit" value="СОЗДАТЬ">
+            <a href="/auth">Уже есть учётноая запись?</a>
+        </div>
+    </form>
+</body>
+</html>
